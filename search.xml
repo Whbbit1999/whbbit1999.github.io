@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>hexo使用指南</title>
+      <link href="/2020/03/10/page-2020-03-10/"/>
+      <url>/2020/03/10/page-2020-03-10/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>我发现最近需要hexo命令的时候常常会忘记，所以就有了这一篇关于hexo命令及使用事项的文章</p></blockquote><h2 id="new-新建文章"><a href="#new-新建文章" class="headerlink" title="new 新建文章"></a>new 新建文章</h2><pre><code>hexo new [layout] &lt;title&gt;</code></pre><p>新建文章。如果没有设置<code>layout</code>的话，默认使用 <strong>_config.yml</strong> 中的<code>default_layout</code> 参数代替。如果使用的标题中含有空格的话，就用引号括起来</p><pre><code>hexo new “文章名称”</code></pre><h2 id="部署前要使用的命令及其作用"><a href="#部署前要使用的命令及其作用" class="headerlink" title="部署前要使用的命令及其作用"></a>部署前要使用的命令及其作用</h2><ol><li><p>本地预览</p><pre><code>hexo s</code></pre></li><li><p>生成静态页面</p><pre><code>hexo g</code></pre></li><li><p>上传到服务器</p><pre><code>hexo d</code></pre></li></ol><hr><p>参考文章：<br>hexo官方文档： <a href="https://hexo.io/zh-cn/docs/commands" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs/commands</a><br>简书【404_e0a3<br>】： <a href="https://www.jianshu.com/p/2cdb766cda1f" target="_blank" rel="noopener">https://www.jianshu.com/p/2cdb766cda1f</a></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 学习笔记 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>使用阿里云OSS搭建自己的图床</title>
       <link href="/2020/02/10/page-2020-02-10-02/"/>
       <url>/2020/02/10/page-2020-02-10-02/</url>

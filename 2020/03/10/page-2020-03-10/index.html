@@ -4,11 +4,11 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="使用阿里云OSS搭建自己的图床, 朽月">
+    <meta name="keywords" content="hexo使用指南, 朽月">
     <meta name="description" content="
-在写markdown文档的时候，经常会想要插入一些图片来让文章变的尽可能的图文并茂，但是如果是托管到GitHub上的话，图片又不是太好处理，所以就有了今天的这篇文章。
+我发现最近需要hexo命令的时候常常会忘记，所以就有了这一篇关于hexo命令及使用事项的文章
 
-搭建自己的图床的好处再网上你可以搜索到许许多多的图床供你来使用，但是">
+new 新建文章hexo new [layout] &amp;lt;title&amp;gt;新建文章。如果没有设置layout的话，默认使用 _config">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -16,7 +16,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>使用阿里云OSS搭建自己的图床 | 朽月</title>
+    <title>hexo使用指南 | 朽月</title>
     <link rel="icon" type="image/png" href="/505735.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -284,12 +284,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/21.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">使用阿里云OSS搭建自己的图床</h1>
+                    <h1 class="description center-align post-title">hexo使用指南</h1>
                 </div>
             </div>
         </div>
@@ -406,23 +406,14 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E5%B0%8F%E6%8A%80%E5%B7%A7/">
-                                <span class="chip bg-color">小技巧</span>
+                            <a href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                                <span class="chip bg-color">学习笔记</span>
                             </a>
                         
                     </div>
                     
                 </div>
                 <div class="col s5 right-align">
-                    
-                    <div class="post-cate">
-                        <i class="fas fa-bookmark fa-fw icon-category"></i>
-                        
-                            <a href="/categories/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/" class="post-category">
-                                云服务器
-                            </a>
-                        
-                    </div>
                     
                 </div>
             </div>
@@ -431,28 +422,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-02-10
+                    2020-03-10
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-02-10
+                    2020-03-10
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    780
+                    163
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    2 分
+                    1 分
                 </div>
                 
 
@@ -469,25 +460,19 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <blockquote>
-<p>在写markdown文档的时候，经常会想要插入一些图片来让文章变的尽可能的图文并茂，但是如果是托管到GitHub上的话，图片又不是太好处理，所以就有了今天的这篇文章。</p>
+<p>我发现最近需要hexo命令的时候常常会忘记，所以就有了这一篇关于hexo命令及使用事项的文章</p>
 </blockquote>
-<h2 id="搭建自己的图床的好处"><a href="#搭建自己的图床的好处" class="headerlink" title="搭建自己的图床的好处"></a>搭建自己的图床的好处</h2><p>再网上你可以搜索到许许多多的图床供你来使用，但是这些经常会因为各种各样的原因被封。如果你使用网上的图床，有可能会使你的博客的文章在一夜之间所有的图片显示不出来。这时你就会感到自己搭建图床的好处了。<br>有的人可能会想，免费的图床它不香吗，被封了我再将图片传到另一个不就行了吗？<br>但是你想过没有，有时你急需要图床的时候，又不是很好找到，还有自己的图片在本地不小心被删掉的状况。搭建一个自己的图床来保存图片，可以随时随地的使用自己的链接，不是很好吗？</p>
-<h2 id="搭建的方法（这里用阿里云OSS）"><a href="#搭建的方法（这里用阿里云OSS）" class="headerlink" title="搭建的方法（这里用阿里云OSS）"></a>搭建的方法（这里用阿里云OSS）</h2><h3 id="一、开通阿里云OSS服务"><a href="#一、开通阿里云OSS服务" class="headerlink" title="一、开通阿里云OSS服务"></a>一、开通阿里云OSS服务</h3><p>首先在阿里云上购买OSS服务，地址 <a href="https://www.aliyun.com/product/oss" target="_blank" rel="noopener">https://www.aliyun.com/product/oss</a><br>点击折扣套餐<br><img src="https://whbbit-picture.oss-cn-beijing.aliyuncs.com/20200210105935.png" alt=""><br>跳转后，选择最低配置，选择支付<br><img src="https://whbbit-picture.oss-cn-beijing.aliyuncs.com/20200210110027.png" alt=""></p>
-<h3 id="在管理控制台新建Bucket"><a href="#在管理控制台新建Bucket" class="headerlink" title="在管理控制台新建Bucket"></a>在管理控制台新建Bucket</h3><p>Bucket名称按要求填好即可，下面的读写权限选择成为<code>公共读</code><br><img src="https://whbbit-picture.oss-cn-beijing.aliyuncs.com/20200210110546.png" alt=""><br>创建成功后，就先可告一段落</p>
-<h3 id="图片的上传"><a href="#图片的上传" class="headerlink" title="图片的上传"></a>图片的上传</h3><p>这里推荐使用<strong>PicGo</strong>，它是GitHub上的开源项目，可以快速的将本地图片上传到图床，可以去<a href="https://github.com/Molunerfinn/PicGo" target="_blank" rel="noopener">https://github.com/Molunerfinn/PicGo</a> 下载PicGo（文档都是中文，安装过程应该不用赘述）<br>下载安装好后，是这个样子的↓<br><img src="https://whbbit-picture.oss-cn-beijing.aliyuncs.com/20200210110946.png" alt="PicGo"></p>
-<h3 id="PicGo配置图床"><a href="#PicGo配置图床" class="headerlink" title="PicGo配置图床"></a>PicGo配置图床</h3><p>点击图床设置，找到并点击阿里云OSS  </p>
-<p><img src="https://whbbit-picture.oss-cn-beijing.aliyuncs.com/oss.png" alt=""></p>
-<ul>
-<li>这里的accesskey和accesskeySecret可以从阿里云控制台获取（鼠标移至阿里云你的头像上，可以发现Accesskey管理）</li>
-<li>存储空间和你刚才创建Bucket时使用同一个，可以从阿里云OSS控制台上复制，以免手贱打错字</li>
-<li>存储区域在阿里云OSS控制台去找，如下图所示<br><img src="https://whbbit-picture.oss-cn-beijing.aliyuncs.com/20200210111629.png" alt=""></li>
-<li>可以先填写有星号的，其他默认即可</li>
-</ul>
-<h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><p>配置完成后，就可以再截图后，点击剪贴板图片上传直接将刚截到的图片上传至图床；或者可以将本地的图片拖到虚线框内即可。<br>如果你和我一样是在markdown中使用，就选择西方的markdown即可。</p>
-<blockquote>
-<p>至此，图床就可以使用了。在PicGo中，点击相册，看到图片下面有3个按钮，点击第一个就是复制链接。复制后，将其直接粘贴到你的markdown文章中即可使用。<strong>本文中所使用的所有图片都是来源于此</strong></p>
-</blockquote>
-<h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><p>将自己阿里云上的accesskey保存好，不要轻易的告诉别人。信息安全问题，有可能就是一个疏忽造成的。</p>
+<h2 id="new-新建文章"><a href="#new-新建文章" class="headerlink" title="new 新建文章"></a>new 新建文章</h2><pre><code>hexo new [layout] &lt;title&gt;</code></pre><p>新建文章。如果没有设置<code>layout</code>的话，默认使用 <strong>_config.yml</strong> 中的<code>default_layout</code> 参数代替。如果使用的标题中含有空格的话，就用引号括起来</p>
+<pre><code>hexo new “文章名称”</code></pre><h2 id="部署前要使用的命令及其作用"><a href="#部署前要使用的命令及其作用" class="headerlink" title="部署前要使用的命令及其作用"></a>部署前要使用的命令及其作用</h2><ol>
+<li><p>本地预览</p>
+<pre><code>hexo s</code></pre></li>
+<li><p>生成静态页面</p>
+<pre><code>hexo g</code></pre></li>
+<li><p>上传到服务器</p>
+<pre><code>hexo d</code></pre></li>
+</ol>
+<hr>
+<p>参考文章：<br>hexo官方文档： <a href="https://hexo.io/zh-cn/docs/commands" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs/commands</a><br>简书【404_e0a3<br>】： <a href="https://www.jianshu.com/p/2cdb766cda1f" target="_blank" rel="noopener">https://www.jianshu.com/p/2cdb766cda1f</a></p>
 
             </div>
             <hr/>
@@ -503,7 +488,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://wanquanxiaobai.com" rel="external nofollow noreferrer">朽月</a>
+                    <a href="http://wanquanxiaobai.com" rel="external nofollow noreferrer">Whbbit</a>
                 </span>
             </div>
             <div class="reprint__type">
@@ -513,7 +498,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://wanquanxiaobai.com/2020/02/10/page-2020-02-10-02/">http://wanquanxiaobai.com/2020/02/10/page-2020-02-10-02/</a>
+                    <a href="http://wanquanxiaobai.com/2020/03/10/page-2020-03-10/">http://wanquanxiaobai.com/2020/03/10/page-2020-03-10/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -526,7 +511,7 @@
                     本博客所有文章除特別声明外，均采用
                     <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
                     许可协议。转载请注明来源
-                    <a href="http://wanquanxiaobai.com" target="_blank">朽月</a>
+                    <a href="http://wanquanxiaobai.com" target="_blank">Whbbit</a>
                     !
                 </span>
             </div>
@@ -551,8 +536,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E5%B0%8F%E6%8A%80%E5%B7%A7/">
-                                    <span class="chip bg-color">小技巧</span>
+                                <a href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                                    <span class="chip bg-color">学习笔记</span>
                                 </a>
                             
                         </div>
@@ -718,9 +703,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2020/03/10/page-2020-03-10/">
                     <div class="card-image">
@@ -741,9 +727,9 @@ new 新建文章hexo new [layout] &lt;title&gt;新建文章。如果没有设置
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-03-10
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-10
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -752,6 +738,7 @@ new 新建文章hexo new [layout] &lt;title&gt;新建文章。如果没有设置
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -770,22 +757,22 @@ new 新建文章hexo new [layout] &lt;title&gt;新建文章。如果没有设置
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/02/10/page-20-02-10-01/">
+                <a href="/2020/02/10/page-2020-02-10-02/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="代码截图插件">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="使用阿里云OSS搭建自己的图床">
                         
-                        <span class="card-title">代码截图插件</span>
+                        <span class="card-title">使用阿里云OSS搭建自己的图床</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
                             
-你有没有在查资料时见到一些非常漂亮的代码块截图？你是否需要在自己的博客中添加一些代码块的截图？这个插件可能能够帮助到你。
+在写markdown文档的时候，经常会想要插入一些图片来让文章变的尽可能的图文并茂，但是如果是托管到GitHub上的话，图片又不是太好处理，所以就有了今天的这篇文章。
 
-前言现在我们使用的编辑器大体上都转换成了微软的vscode这个轻量级的编辑器，这里有着数不清的插件，今天推荐的是一
+搭建自己的图床的好处再网上你可以搜索到许许多多的图床供你来使用，但是
                         
                     </div>
                     <div class="publish-info">
@@ -796,8 +783,8 @@ new 新建文章hexo new [layout] &lt;title&gt;新建文章。如果没有设置
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E6%8F%92%E4%BB%B6/" class="post-category">
-                                    插件
+                            <a href="/categories/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/" class="post-category">
+                                    云服务器
                                 </a>
                             
                             
@@ -807,8 +794,8 @@ new 新建文章hexo new [layout] &lt;title&gt;新建文章。如果没有设置
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E4%BC%98%E7%A7%80%E8%B5%84%E6%BA%90/">
-                        <span class="chip bg-color">优秀资源</span>
+                    <a href="/tags/%E5%B0%8F%E6%8A%80%E5%B7%A7/">
+                        <span class="chip bg-color">小技巧</span>
                     </a>
                     
                 </div>
