@@ -80,6 +80,31 @@
     
     <entry>
       <title>代码截图插件</title>
+      <link href="/2020/02/10/202010232031-md/"/>
+      <url>/2020/02/10/202010232031-md/</url>
+      
+        <content type="html"><![CDATA[<h2 id="在屏幕窗口中垂直水平居中"><a href="#在屏幕窗口中垂直水平居中" class="headerlink" title="在屏幕窗口中垂直水平居中"></a>在屏幕窗口中垂直水平居中</h2><h3 id="未知大小的元素在屏幕窗口中垂直水平居中"><a href="#未知大小的元素在屏幕窗口中垂直水平居中" class="headerlink" title="未知大小的元素在屏幕窗口中垂直水平居中"></a>未知大小的元素在屏幕窗口中垂直水平居中</h3><ol><li>使用弹性盒模型</li></ol><pre class=" language-css"><code class="language-css"><span class="token selector">html,body </span><span class="token punctuation">{</span>  <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">100%</span><span class="token punctuation">;</span><span class="token punctuation">}</span><span class="token selector">body </span><span class="token punctuation">{</span>  <span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span>  <span class="token property">justify-content</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>  <span class="token property">align-items</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span><span class="token punctuation">}</span></code></pre><ol start="2"><li>使用绝对定位</li></ol><pre class=" language-css"><code class="language-css"><span class="token selector">元素 </span><span class="token punctuation">{</span>  <span class="token property">position</span><span class="token punctuation">:</span> fixed<span class="token punctuation">;</span>  <span class="token property">top</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">;</span>  <span class="token property">bottom</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">;</span>  <span class="token property">left</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">;</span>  <span class="token property">right</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">;</span>  <span class="token property">margin</span><span class="token punctuation">:</span> auto<span class="token punctuation">;</span><span class="token punctuation">}</span></code></pre><ol start="3"><li>使用定位 + 位移（translate）</li></ol><pre><code>元素{    position: fixed;    top: 50%;    left: 50%;    transform : translateX(-50%) translateY(-50%);}</code></pre><h3 id="已知大小的元素在屏幕窗口中垂直水平居中"><a href="#已知大小的元素在屏幕窗口中垂直水平居中" class="headerlink" title="已知大小的元素在屏幕窗口中垂直水平居中"></a>已知大小的元素在屏幕窗口中垂直水平居中</h3><ol><li>使用定位</li></ol><pre class=" language-css"><code class="language-css"><span class="token selector">元素 </span><span class="token punctuation">{</span>  <span class="token property">position</span><span class="token punctuation">:</span> fixed<span class="token punctuation">;</span>  <span class="token property">top</span><span class="token punctuation">:</span> <span class="token number">50%</span><span class="token punctuation">;</span>  <span class="token property">left</span><span class="token punctuation">:</span> <span class="token number">50%</span><span class="token punctuation">;</span>  <span class="token property">margin-top</span><span class="token punctuation">:</span> -元素宽度/<span class="token number">2</span><span class="token punctuation">;</span>  <span class="token property">margin-left</span><span class="token punctuation">:</span> -元素高度/<span class="token number">2</span><span class="token punctuation">;</span><span class="token punctuation">}</span></code></pre><h2 id="子元素在父元素中垂直水平居中"><a href="#子元素在父元素中垂直水平居中" class="headerlink" title="子元素在父元素中垂直水平居中"></a>子元素在父元素中垂直水平居中</h2><h3 id="未知大小"><a href="#未知大小" class="headerlink" title="未知大小"></a>未知大小</h3><p>1.</p><h3 id="已知大小"><a href="#已知大小" class="headerlink" title="已知大小"></a>已知大小</h3>]]></content>
+      
+      
+      <categories>
+          
+          <category> CSS </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 笔记 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>代码截图插件</title>
       <link href="/2020/02/10/page-20-02-10-01/"/>
       <url>/2020/02/10/page-20-02-10-01/</url>
       
@@ -96,31 +121,6 @@
         <tags>
             
             <tag> 优秀资源 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>建站的心酸历程</title>
-      <link href="/2020/02/09/page-2020-02-09_01/"/>
-      <url>/2020/02/09/page-2020-02-09_01/</url>
-      
-        <content type="html"><![CDATA[<blockquote><p>在我的电脑重装系统后，迟迟没有再搭建自己的hexo博客。在想着重新开始后，却遇到了极大的问题。。。</p></blockquote><h2 id="新的困难"><a href="#新的困难" class="headerlink" title="新的困难"></a>新的困难</h2><p>在根据Hexo文档用<code>npm install hexo-cli -g</code>全局安装好hexo后，却再也进行不下去了。。<br>我的hexo命令不再起作用，<code>hexo init</code>不能成功的从GitHub上下载hexo依赖的各种环境，在试了很多方法后，我发现了一种可以成功的方法<br>我发现在错误提示中有<code>http://XXX</code>我试着将这个GitHub仓库在浏览器打开，并试着自己用<code>git&quot;//XXX</code>进行安装，居然成功了。呵呵呵<br>接着又有问题来了，在GitHub上手动将项目拉取下来后，用<code>hexo -g</code>又发现了错误。。。<br>再根据提示运行<code>npm install --save</code> <code>npm install</code>后我的hexo命令终于可以成功的运行了。<br>但是，又又又出问题了，这是，又出现了<code>hexo not found</code>这个错误，我翻看<code>theme</code>文件夹，这里的主题文件居然是空的，我想有可能下载一个主题文件并将<code>config</code>文件修改一下可能会好？？<br>说着就从hexo官网主题中翻出来我以前收藏的主题，中文叫<code>闪烁之狐</code><a href="https://blinkfox.github.io/" target="_blank" rel="noopener">https://blinkfox.github.io/</a> 是作者的博客主页<br>在我下载好后，将其放入<code>theme</code>文件夹下，再将整个项目用vscode打开，运行<code>hexo -g</code> <code>hexo -s</code>后，(⊙o⊙)？终于运行起来了！！！</p><blockquote><p>**，真难啊，但是好歹是在本地运行起来了，我觉的上一回安装博客也没这么难啊。但是这可以说是最神奇的建站历程了吧！今日在这里分享出来，供大家观赏！</p></blockquote>]]></content>
-      
-      
-      <categories>
-          
-          <category> 前端 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 翻车日常 </tag>
             
         </tags>
       
