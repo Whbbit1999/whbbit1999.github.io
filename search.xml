@@ -4,6 +4,60 @@
   
     
     <entry>
+      <title>函数递归及匿名函数</title>
+      <link href="/2020/10/24/page-202010241706/"/>
+      <url>/2020/10/24/page-202010241706/</url>
+      
+        <content type="html"><![CDATA[<p>函数的递归以及匿名函数的使用</p><a id="more"></a><h2 id="递归"><a href="#递归" class="headerlink" title="递归"></a>递归</h2><h2 id="匿名函数"><a href="#匿名函数" class="headerlink" title="匿名函数"></a>匿名函数</h2><h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><ol><li>将一个我匿名函数赋值给一个变量</li></ol><pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">var</span> fn <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>  <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">"hehe"</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre><ol start="2"><li>将匿名函数绑定给事件所触发的对象</li></ol><pre class=" language-javascript"><code class="language-javascript">document<span class="token punctuation">.</span>onclick <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>  <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">"hehe"</span><span class="token punctuation">)</span><span class="token punctuation">}</span></code></pre><ol start="3"><li>匿名函数自我执行</li></ol><pre class=" language-javascript"><code class="language-javascript"><span class="token punctuation">;</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>  <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">"函数的自我执行"</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre><blockquote><p>有多个的匿名函数的自我调用的话，在每次自我调用完，加上分号。也可以在自我调用前使用分号与前面进行分隔。</p></blockquote><ol start="4"><li>匿名函数的返回值赋值给一个变量</li></ol><pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">var</span> sum <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span>a<span class="token punctuation">,</span> b<span class="token punctuation">)</span> <span class="token punctuation">{</span>  <span class="token keyword">return</span> a <span class="token operator">+</span> b<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">)</span><span class="token function">alert</span><span class="token punctuation">(</span>sum<span class="token punctuation">)</span></code></pre><ol start="5"><li>将匿名函数的返回值输出来</li></ol><pre class=" language-javascript"><code class="language-javascript"><span class="token function">alert</span><span class="token punctuation">(</span>  <span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span>a<span class="token punctuation">,</span> b<span class="token punctuation">)</span> <span class="token punctuation">{</span>    <span class="token keyword">return</span> a <span class="token operator">*</span> b  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">)</span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 笔记 </tag>
+            
+            <tag> JS </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>作用域及作用域链</title>
+      <link href="/2020/10/23/page-20201024/"/>
+      <url>/2020/10/23/page-20201024/</url>
+      
+        <content type="html"><![CDATA[<p>作用域以及作用域链的作用原理</p><a id="more"></a><h2 id="作用域"><a href="#作用域" class="headerlink" title="作用域"></a>作用域</h2><p>作用域： 作用的范围</p><h2 id="作用域链"><a href="#作用域链" class="headerlink" title="作用域链"></a>作用域链</h2><p>当前做作用域中没有要找的东西，则向父级作用域查找，如果还没有，则依次向父级的父级查找，这个过程称为作用域链</p><h2 id="全局变量和局部变量"><a href="#全局变量和局部变量" class="headerlink" title="全局变量和局部变量"></a>全局变量和局部变量</h2><h3 id="全局变量"><a href="#全局变量" class="headerlink" title="全局变量"></a>全局变量</h3><p>声明在 script 作用域中的变量，称为全局变量。作用范围是整个页面。生存周期是从页面开始运行，到页面关闭，才会释放内存空间。同时全局变量也是 window 对象的属性</p><h2 id="局部变量"><a href="#局部变量" class="headerlink" title="局部变量"></a>局部变量</h2><p>声明在函数作用域中的变量，称为局部变量。作用范围是当前函数。生存周期是函数调用开辟空间，到函数调用释放空间。不是 window 对象的属性。</p><blockquote><p>window 对象：窗口顶级变量<br>页面顶级对象：document</p></blockquote><h2 id="全局函数和局部函数"><a href="#全局函数和局部函数" class="headerlink" title="全局函数和局部函数"></a>全局函数和局部函数</h2><h3 id="全局函数"><a href="#全局函数" class="headerlink" title="全局函数"></a>全局函数</h3><p>声明在 script 作用域中的函数，称为全局函数，作用范围是整个页面。同时也是 window 对象的方法。</p><h3 id="局部函数"><a href="#局部函数" class="headerlink" title="局部函数"></a>局部函数</h3><p>声明在函数作用域中的函数，称为局部函数。</p><blockquote><p>浏览器只要进入作用域，就会启动解析器。</p></blockquote><h3 id="主要的过程-："><a href="#主要的过程-：" class="headerlink" title="主要的过程 ："></a>主要的过程 ：</h3><h4 id="一、预解析"><a href="#一、预解析" class="headerlink" title="一、预解析"></a>一、预解析</h4><p>浏览器会寻找关键字 <code>var</code> <code>function</code>和 <code>函数的形参</code></p><ol><li>当找到 var 时，取后面的名字放到内存中，并给其初始化一个<code>undefined</code>的值；</li><li>当找到 function 时，取后面的名字放到内存中，并将整个函数块赋值给这个名字；</li><li>当变量和函数同名时，丢弃变量，保存函数到内存中</li><li>当有多个 script 标签时，从上到下一次解析。所以如果有多个 script 时，可以将所有的声明语句放到第一个 script 标签中。</li><li>当在子作用域中执行表达式时，发现一个变量，但是这个变量在当前作用域中没有。就会向父级查找，如果一直找到全局作用域时也没有找到，当前表达式如果是赋值表达式时，那么会在全局作用域中自动生成该变量。</li></ol><h4 id="二、逐行解析代码"><a href="#二、逐行解析代码" class="headerlink" title="二、逐行解析代码"></a>二、逐行解析代码</h4><blockquote><p>如果是声明函数，将其跳过</p></blockquote><ol><li>执行表达式</li><li>函数调用 （函数也是一个作用域）</li></ol><blockquote><p>this<br>所在的函数绑定给了谁，这个 this 就代表谁。<br>没有任何明确的绑定对象时，代表绑定了 windiw</p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> 笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 笔记 </tag>
+            
+            <tag> Js </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Markdown语法简介</title>
       <link href="/2020/03/18/page-2020-03-18/"/>
       <url>/2020/03/18/page-2020-03-18/</url>

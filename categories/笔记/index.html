@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="分类: 插件, 朽月">
-    <meta name="description" content="分类: 插件 | 朽月">
+    <meta name="keywords" content="分类: 笔记, 朽月">
+    <meta name="description" content="分类: 笔记 | 朽月">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +13,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>分类: 插件 | 朽月</title>
+    <title>分类: 笔记 | 朽月</title>
     <link rel="icon" type="image/png" href="/505735.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -343,7 +343,7 @@
                 
                 <a href="/categories/%E6%8F%92%E4%BB%B6/" title="插件: 1">
                     <span class="chip center-align waves-effect waves-light
-                             chip-active "
+                             chip-default "
                             style="background-color: #F5EEF8;">插件
                         <span class="tag-length">1</span>
                     </span>
@@ -361,7 +361,7 @@
                 
                 <a href="/categories/%E7%AC%94%E8%AE%B0/" title="笔记: 2">
                     <span class="chip center-align waves-effect waves-light
-                             chip-default "
+                             chip-active "
                             style="background-color: #E8F8F5;">笔记
                         <span class="tag-length">2</span>
                     </span>
@@ -389,34 +389,44 @@
             
             <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2020/02/10/page-20-02-10-01/">
+                    <a href="/2020/10/24/page-202010241706/">
                         <div class="card-image tag-image">
                             
                             
-                            <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="代码截图插件">
+                            <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="函数递归及匿名函数">
                             
-                            <span class="card-title">代码截图插件</span>
+                            <span class="card-title">函数递归及匿名函数</span>
                         </div>
                     </a>
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                
-你有没有在查资料时见到一些非常漂亮的代码块截图？你是否需要在自己的博客中添加一些代码块的截图？这个插件可能能够帮助到你。
+                                函数的递归以及匿名函数的使用
 
-前言现在我们使用的编辑器大体上都转换成了微软的vscode这个轻量级的编辑器，这里有着数不清的插件，今天推荐的是一
+
+递归匿名函数使用
+将一个我匿名函数赋值给一个变量
+
+var fn = function () {
+  alert("hehe")
+}
+fn()
+
+将匿名函数绑定给事件所触发的对象
+
+document.onc
                             
                         </div>
                         <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-10
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-10-24
                             </span>
                             <span class="publish-author">
                                 
                                 <i class="fas fa-bookmark fa-fw icon-category"></i>
                                 
-                                <a href="/categories/%E6%8F%92%E4%BB%B6/" class="post-category">
-                                    插件
+                                <a href="/categories/%E7%AC%94%E8%AE%B0/" class="post-category">
+                                    笔记
                                 </a>
                                 
                                 
@@ -427,8 +437,67 @@
                     
                     <div class="card-action article-tags">
                         
-                        <a href="/tags/%E4%BC%98%E7%A7%80%E8%B5%84%E6%BA%90/">
-                            <span class="chip bg-color">优秀资源</span>
+                        <a href="/tags/%E7%AC%94%E8%AE%B0/">
+                            <span class="chip bg-color">笔记</span>
+                        </a>
+                        
+                        <a href="/tags/JS/">
+                            <span class="chip bg-color">JS</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2020/10/23/page-20201024/">
+                        <div class="card-image tag-image">
+                            
+                            
+                            <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="作用域及作用域链">
+                            
+                            <span class="card-title">作用域及作用域链</span>
+                        </div>
+                    </a>
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                作用域以及作用域链的作用原理
+
+
+作用域作用域： 作用的范围
+作用域链当前做作用域中没有要找的东西，则向父级作用域查找，如果还没有，则依次向父级的父级查找，这个过程称为作用域链
+全局变量和局部变量全局变量声明在 script 作用域中的变量
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-10-23
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/%E7%AC%94%E8%AE%B0/" class="post-category">
+                                    笔记
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/%E7%AC%94%E8%AE%B0/">
+                            <span class="chip bg-color">笔记</span>
+                        </a>
+                        
+                        <a href="/tags/Js/">
+                            <span class="chip bg-color">Js</span>
                         </a>
                         
                     </div>

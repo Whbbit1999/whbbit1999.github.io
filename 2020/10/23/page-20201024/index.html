@@ -4,17 +4,13 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="代码截图插件, 朽月">
-    <meta name="description" content="在屏幕窗口中垂直水平居中未知大小的元素在屏幕窗口中垂直水平居中
-使用弹性盒模型
+    <meta name="keywords" content="作用域及作用域链, 朽月">
+    <meta name="description" content="作用域以及作用域链的作用原理
 
-html,
-body {
-  height: 100%;
-}
-body {
-  display: flex;
-  justify-content: cente">
+
+作用域作用域： 作用的范围
+作用域链当前做作用域中没有要找的东西，则向父级作用域查找，如果还没有，则依次向父级的父级查找，这个过程称为作用域链
+全局变量和局部变量全局变量声明在 script 作用域中的变量">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -22,7 +18,7 @@ body {
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>代码截图插件 | 朽月</title>
+    <title>作用域及作用域链 | 朽月</title>
     <link rel="icon" type="image/png" href="/505735.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -290,12 +286,12 @@ body {
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/6.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/18.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">代码截图插件</h1>
+                    <h1 class="description center-align post-title">作用域及作用域链</h1>
                 </div>
             </div>
         </div>
@@ -416,6 +412,10 @@ body {
                                 <span class="chip bg-color">笔记</span>
                             </a>
                         
+                            <a href="/tags/Js/">
+                                <span class="chip bg-color">Js</span>
+                            </a>
+                        
                     </div>
                     
                 </div>
@@ -424,8 +424,8 @@ body {
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/CSS/" class="post-category">
-                                CSS
+                            <a href="/categories/%E7%AC%94%E8%AE%B0/" class="post-category">
+                                笔记
                             </a>
                         
                     </div>
@@ -437,28 +437,28 @@ body {
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-02-10
+                    2020-10-23
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-10-23
+                    2020-10-24
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    159
+                    630
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    2 分
                 </div>
                 
 
@@ -474,49 +474,40 @@ body {
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="在屏幕窗口中垂直水平居中"><a href="#在屏幕窗口中垂直水平居中" class="headerlink" title="在屏幕窗口中垂直水平居中"></a>在屏幕窗口中垂直水平居中</h2><h3 id="未知大小的元素在屏幕窗口中垂直水平居中"><a href="#未知大小的元素在屏幕窗口中垂直水平居中" class="headerlink" title="未知大小的元素在屏幕窗口中垂直水平居中"></a>未知大小的元素在屏幕窗口中垂直水平居中</h3><ol>
-<li>使用弹性盒模型</li>
+                <p>作用域以及作用域链的作用原理</p>
+<a id="more"></a>
+
+<h2 id="作用域"><a href="#作用域" class="headerlink" title="作用域"></a>作用域</h2><p>作用域： 作用的范围</p>
+<h2 id="作用域链"><a href="#作用域链" class="headerlink" title="作用域链"></a>作用域链</h2><p>当前做作用域中没有要找的东西，则向父级作用域查找，如果还没有，则依次向父级的父级查找，这个过程称为作用域链</p>
+<h2 id="全局变量和局部变量"><a href="#全局变量和局部变量" class="headerlink" title="全局变量和局部变量"></a>全局变量和局部变量</h2><h3 id="全局变量"><a href="#全局变量" class="headerlink" title="全局变量"></a>全局变量</h3><p>声明在 script 作用域中的变量，称为全局变量。作用范围是整个页面。生存周期是从页面开始运行，到页面关闭，才会释放内存空间。同时全局变量也是 window 对象的属性</p>
+<h2 id="局部变量"><a href="#局部变量" class="headerlink" title="局部变量"></a>局部变量</h2><p>声明在函数作用域中的变量，称为局部变量。作用范围是当前函数。生存周期是函数调用开辟空间，到函数调用释放空间。不是 window 对象的属性。</p>
+<blockquote>
+<p>window 对象：窗口顶级变量<br>页面顶级对象：document</p>
+</blockquote>
+<h2 id="全局函数和局部函数"><a href="#全局函数和局部函数" class="headerlink" title="全局函数和局部函数"></a>全局函数和局部函数</h2><h3 id="全局函数"><a href="#全局函数" class="headerlink" title="全局函数"></a>全局函数</h3><p>声明在 script 作用域中的函数，称为全局函数，作用范围是整个页面。同时也是 window 对象的方法。</p>
+<h3 id="局部函数"><a href="#局部函数" class="headerlink" title="局部函数"></a>局部函数</h3><p>声明在函数作用域中的函数，称为局部函数。</p>
+<blockquote>
+<p>浏览器只要进入作用域，就会启动解析器。</p>
+</blockquote>
+<h3 id="主要的过程-："><a href="#主要的过程-：" class="headerlink" title="主要的过程 ："></a>主要的过程 ：</h3><h4 id="一、预解析"><a href="#一、预解析" class="headerlink" title="一、预解析"></a>一、预解析</h4><p>浏览器会寻找关键字 <code>var</code> <code>function</code>和 <code>函数的形参</code></p>
+<ol>
+<li>当找到 var 时，取后面的名字放到内存中，并给其初始化一个<code>undefined</code>的值；</li>
+<li>当找到 function 时，取后面的名字放到内存中，并将整个函数块赋值给这个名字；</li>
+<li>当变量和函数同名时，丢弃变量，保存函数到内存中</li>
+<li>当有多个 script 标签时，从上到下一次解析。所以如果有多个 script 时，可以将所有的声明语句放到第一个 script 标签中。</li>
+<li>当在子作用域中执行表达式时，发现一个变量，但是这个变量在当前作用域中没有。就会向父级查找，如果一直找到全局作用域时也没有找到，当前表达式如果是赋值表达式时，那么会在全局作用域中自动生成该变量。</li>
 </ol>
-<pre class=" language-css"><code class="language-css"><span class="token selector">html,
-body </span><span class="token punctuation">{</span>
-  <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">100%</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-<span class="token selector">body </span><span class="token punctuation">{</span>
-  <span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span>
-  <span class="token property">justify-content</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
-  <span class="token property">align-items</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code></pre>
-<ol start="2">
-<li>使用绝对定位</li>
+<h4 id="二、逐行解析代码"><a href="#二、逐行解析代码" class="headerlink" title="二、逐行解析代码"></a>二、逐行解析代码</h4><blockquote>
+<p>如果是声明函数，将其跳过</p>
+</blockquote>
+<ol>
+<li>执行表达式</li>
+<li>函数调用 （函数也是一个作用域）</li>
 </ol>
-<pre class=" language-css"><code class="language-css"><span class="token selector">元素 </span><span class="token punctuation">{</span>
-  <span class="token property">position</span><span class="token punctuation">:</span> fixed<span class="token punctuation">;</span>
-  <span class="token property">top</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">;</span>
-  <span class="token property">bottom</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">;</span>
-  <span class="token property">left</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">;</span>
-  <span class="token property">right</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">;</span>
-  <span class="token property">margin</span><span class="token punctuation">:</span> auto<span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code></pre>
-<ol start="3">
-<li>使用定位 + 位移（translate）</li>
-</ol>
-<pre><code>元素{
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform : translateX(-50%) translateY(-50%);
-}</code></pre><h3 id="已知大小的元素在屏幕窗口中垂直水平居中"><a href="#已知大小的元素在屏幕窗口中垂直水平居中" class="headerlink" title="已知大小的元素在屏幕窗口中垂直水平居中"></a>已知大小的元素在屏幕窗口中垂直水平居中</h3><ol>
-<li>使用定位</li>
-</ol>
-<pre class=" language-css"><code class="language-css"><span class="token selector">元素 </span><span class="token punctuation">{</span>
-  <span class="token property">position</span><span class="token punctuation">:</span> fixed<span class="token punctuation">;</span>
-  <span class="token property">top</span><span class="token punctuation">:</span> <span class="token number">50%</span><span class="token punctuation">;</span>
-  <span class="token property">left</span><span class="token punctuation">:</span> <span class="token number">50%</span><span class="token punctuation">;</span>
-  <span class="token property">margin-top</span><span class="token punctuation">:</span> -元素宽度/<span class="token number">2</span><span class="token punctuation">;</span>
-  <span class="token property">margin-left</span><span class="token punctuation">:</span> -元素高度/<span class="token number">2</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code></pre>
-<h2 id="子元素在父元素中垂直水平居中"><a href="#子元素在父元素中垂直水平居中" class="headerlink" title="子元素在父元素中垂直水平居中"></a>子元素在父元素中垂直水平居中</h2><h3 id="未知大小"><a href="#未知大小" class="headerlink" title="未知大小"></a>未知大小</h3><p>1.</p>
-<h3 id="已知大小"><a href="#已知大小" class="headerlink" title="已知大小"></a>已知大小</h3>
+<blockquote>
+<p>this<br>所在的函数绑定给了谁，这个 this 就代表谁。<br>没有任何明确的绑定对象时，代表绑定了 windiw</p>
+</blockquote>
+
             </div>
             <hr/>
 
@@ -531,7 +522,7 @@ body </span><span class="token punctuation">{</span>
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://whbbit.cn" rel="external nofollow noreferrer">朽月</a>
+                    <a href="http://whbbit.cn" rel="external nofollow noreferrer">Whbbit</a>
                 </span>
             </div>
             <div class="reprint__type">
@@ -541,7 +532,7 @@ body </span><span class="token punctuation">{</span>
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://whbbit.cn/2020/02/10/202010232031-md/">http://whbbit.cn/2020/02/10/202010232031-md/</a>
+                    <a href="http://whbbit.cn/2020/10/23/page-20201024/">http://whbbit.cn/2020/10/23/page-20201024/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -554,7 +545,7 @@ body </span><span class="token punctuation">{</span>
                     本博客所有文章除特別声明外，均采用
                     <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
                     许可协议。转载请注明来源
-                    <a href="http://whbbit.cn" target="_blank">朽月</a>
+                    <a href="http://whbbit.cn" target="_blank">Whbbit</a>
                     !
                 </span>
             </div>
@@ -581,6 +572,10 @@ body </span><span class="token punctuation">{</span>
                             
                                 <a href="/tags/%E7%AC%94%E8%AE%B0/">
                                     <span class="chip bg-color">笔记</span>
+                                </a>
+                            
+                                <a href="/tags/Js/">
+                                    <span class="chip bg-color">Js</span>
                                 </a>
                             
                         </div>
@@ -750,34 +745,44 @@ body </span><span class="token punctuation">{</span>
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/02/10/page-2020-02-10-02/">
+                <a href="/2020/10/24/page-202010241706/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="使用阿里云OSS搭建自己的图床">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="函数递归及匿名函数">
                         
-                        <span class="card-title">使用阿里云OSS搭建自己的图床</span>
+                        <span class="card-title">函数递归及匿名函数</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-在写markdown文档的时候，经常会想要插入一些图片来让文章变的尽可能的图文并茂，但是如果是托管到GitHub上的话，图片又不是太好处理，所以就有了今天的这篇文章。
+                            函数的递归以及匿名函数的使用
 
-搭建自己的图床的好处再网上你可以搜索到许许多多的图床供你来使用，但是
+
+递归匿名函数使用
+将一个我匿名函数赋值给一个变量
+
+var fn = function () {
+  alert("hehe")
+}
+fn()
+
+将匿名函数绑定给事件所触发的对象
+
+document.onc
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-02-10
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-10-24
                         </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/" class="post-category">
-                                    云服务器
+                            <a href="/categories/%E7%AC%94%E8%AE%B0/" class="post-category">
+                                    笔记
                                 </a>
                             
                             
@@ -787,8 +792,12 @@ body </span><span class="token punctuation">{</span>
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%B0%8F%E6%8A%80%E5%B7%A7/">
-                        <span class="chip bg-color">小技巧</span>
+                    <a href="/tags/%E7%AC%94%E8%AE%B0/">
+                        <span class="chip bg-color">笔记</span>
+                    </a>
+                    
+                    <a href="/tags/JS/">
+                        <span class="chip bg-color">JS</span>
                     </a>
                     
                 </div>
@@ -802,34 +811,33 @@ body </span><span class="token punctuation">{</span>
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/02/10/page-20-02-10-01/">
+                <a href="/2020/03/18/page-2020-03-18/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="代码截图插件">
+                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="Markdown语法简介">
                         
-                        <span class="card-title">代码截图插件</span>
+                        <span class="card-title">Markdown语法简介</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-你有没有在查资料时见到一些非常漂亮的代码块截图？你是否需要在自己的博客中添加一些代码块的截图？这个插件可能能够帮助到你。
-
-前言现在我们使用的编辑器大体上都转换成了微软的vscode这个轻量级的编辑器，这里有着数不清的插件，今天推荐的是一
+                            一、 概述发展历史：Markdown 是一种轻量级标记语言，它允许人们使用易读易写的纯文本格式编写文档。
+Markdown 语言在 2004 由约翰·格鲁伯（英语：John Gruber）创建。
+Markdown 编写的文档可以导出 HTM
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-10
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-18
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E6%8F%92%E4%BB%B6/" class="post-category">
-                                    插件
+                            <a href="/categories/%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7/" class="post-category">
+                                    实用技巧
                                 </a>
                             
                             
@@ -839,8 +847,8 @@ body </span><span class="token punctuation">{</span>
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E4%BC%98%E7%A7%80%E8%B5%84%E6%BA%90/">
-                        <span class="chip bg-color">优秀资源</span>
+                    <a href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                        <span class="chip bg-color">学习笔记</span>
                     </a>
                     
                 </div>

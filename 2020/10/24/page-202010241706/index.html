@@ -4,17 +4,21 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="代码截图插件, 朽月">
-    <meta name="description" content="在屏幕窗口中垂直水平居中未知大小的元素在屏幕窗口中垂直水平居中
-使用弹性盒模型
+    <meta name="keywords" content="函数递归及匿名函数, 朽月">
+    <meta name="description" content="函数的递归以及匿名函数的使用
 
-html,
-body {
-  height: 100%;
+
+递归匿名函数使用
+将一个我匿名函数赋值给一个变量
+
+var fn = function () {
+  alert(&#34;hehe&#34;)
 }
-body {
-  display: flex;
-  justify-content: cente">
+fn()
+
+将匿名函数绑定给事件所触发的对象
+
+document.onc">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -22,7 +26,7 @@ body {
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>代码截图插件 | 朽月</title>
+    <title>函数递归及匿名函数 | 朽月</title>
     <link rel="icon" type="image/png" href="/505735.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -290,12 +294,12 @@ body {
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/6.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">代码截图插件</h1>
+                    <h1 class="description center-align post-title">函数递归及匿名函数</h1>
                 </div>
             </div>
         </div>
@@ -416,6 +420,10 @@ body {
                                 <span class="chip bg-color">笔记</span>
                             </a>
                         
+                            <a href="/tags/JS/">
+                                <span class="chip bg-color">JS</span>
+                            </a>
+                        
                     </div>
                     
                 </div>
@@ -424,8 +432,8 @@ body {
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/CSS/" class="post-category">
-                                CSS
+                            <a href="/categories/%E7%AC%94%E8%AE%B0/" class="post-category">
+                                笔记
                             </a>
                         
                     </div>
@@ -437,21 +445,21 @@ body {
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-02-10
+                    2020-10-24
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-10-23
+                    2020-10-24
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    159
+                    176
                 </div>
                 
 
@@ -474,49 +482,47 @@ body {
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="在屏幕窗口中垂直水平居中"><a href="#在屏幕窗口中垂直水平居中" class="headerlink" title="在屏幕窗口中垂直水平居中"></a>在屏幕窗口中垂直水平居中</h2><h3 id="未知大小的元素在屏幕窗口中垂直水平居中"><a href="#未知大小的元素在屏幕窗口中垂直水平居中" class="headerlink" title="未知大小的元素在屏幕窗口中垂直水平居中"></a>未知大小的元素在屏幕窗口中垂直水平居中</h3><ol>
-<li>使用弹性盒模型</li>
+                <p>函数的递归以及匿名函数的使用</p>
+<a id="more"></a>
+
+<h2 id="递归"><a href="#递归" class="headerlink" title="递归"></a>递归</h2><h2 id="匿名函数"><a href="#匿名函数" class="headerlink" title="匿名函数"></a>匿名函数</h2><h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><ol>
+<li>将一个我匿名函数赋值给一个变量</li>
 </ol>
-<pre class=" language-css"><code class="language-css"><span class="token selector">html,
-body </span><span class="token punctuation">{</span>
-  <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">100%</span><span class="token punctuation">;</span>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">var</span> fn <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">"hehe"</span><span class="token punctuation">)</span>
 <span class="token punctuation">}</span>
-<span class="token selector">body </span><span class="token punctuation">{</span>
-  <span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span>
-  <span class="token property">justify-content</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
-  <span class="token property">align-items</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code></pre>
+<span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre>
 <ol start="2">
-<li>使用绝对定位</li>
+<li>将匿名函数绑定给事件所触发的对象</li>
 </ol>
-<pre class=" language-css"><code class="language-css"><span class="token selector">元素 </span><span class="token punctuation">{</span>
-  <span class="token property">position</span><span class="token punctuation">:</span> fixed<span class="token punctuation">;</span>
-  <span class="token property">top</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">;</span>
-  <span class="token property">bottom</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">;</span>
-  <span class="token property">left</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">;</span>
-  <span class="token property">right</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">;</span>
-  <span class="token property">margin</span><span class="token punctuation">:</span> auto<span class="token punctuation">;</span>
+<pre class=" language-javascript"><code class="language-javascript">document<span class="token punctuation">.</span>onclick <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">"hehe"</span><span class="token punctuation">)</span>
 <span class="token punctuation">}</span></code></pre>
 <ol start="3">
-<li>使用定位 + 位移（translate）</li>
+<li>匿名函数自我执行</li>
 </ol>
-<pre><code>元素{
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform : translateX(-50%) translateY(-50%);
-}</code></pre><h3 id="已知大小的元素在屏幕窗口中垂直水平居中"><a href="#已知大小的元素在屏幕窗口中垂直水平居中" class="headerlink" title="已知大小的元素在屏幕窗口中垂直水平居中"></a>已知大小的元素在屏幕窗口中垂直水平居中</h3><ol>
-<li>使用定位</li>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token punctuation">;</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">"函数的自我执行"</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre>
+<blockquote>
+<p>有多个的匿名函数的自我调用的话，在每次自我调用完，加上分号。也可以在自我调用前使用分号与前面进行分隔。</p>
+</blockquote>
+<ol start="4">
+<li>匿名函数的返回值赋值给一个变量</li>
 </ol>
-<pre class=" language-css"><code class="language-css"><span class="token selector">元素 </span><span class="token punctuation">{</span>
-  <span class="token property">position</span><span class="token punctuation">:</span> fixed<span class="token punctuation">;</span>
-  <span class="token property">top</span><span class="token punctuation">:</span> <span class="token number">50%</span><span class="token punctuation">;</span>
-  <span class="token property">left</span><span class="token punctuation">:</span> <span class="token number">50%</span><span class="token punctuation">;</span>
-  <span class="token property">margin-top</span><span class="token punctuation">:</span> -元素宽度/<span class="token number">2</span><span class="token punctuation">;</span>
-  <span class="token property">margin-left</span><span class="token punctuation">:</span> -元素高度/<span class="token number">2</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code></pre>
-<h2 id="子元素在父元素中垂直水平居中"><a href="#子元素在父元素中垂直水平居中" class="headerlink" title="子元素在父元素中垂直水平居中"></a>子元素在父元素中垂直水平居中</h2><h3 id="未知大小"><a href="#未知大小" class="headerlink" title="未知大小"></a>未知大小</h3><p>1.</p>
-<h3 id="已知大小"><a href="#已知大小" class="headerlink" title="已知大小"></a>已知大小</h3>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">var</span> sum <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span>a<span class="token punctuation">,</span> b<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> a <span class="token operator">+</span> b
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">)</span>
+<span class="token function">alert</span><span class="token punctuation">(</span>sum<span class="token punctuation">)</span></code></pre>
+<ol start="5">
+<li>将匿名函数的返回值输出来</li>
+</ol>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token function">alert</span><span class="token punctuation">(</span>
+  <span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span>a<span class="token punctuation">,</span> b<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> a <span class="token operator">*</span> b
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">)</span>
+<span class="token punctuation">)</span></code></pre>
+
             </div>
             <hr/>
 
@@ -531,7 +537,7 @@ body </span><span class="token punctuation">{</span>
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://whbbit.cn" rel="external nofollow noreferrer">朽月</a>
+                    <a href="http://whbbit.cn" rel="external nofollow noreferrer">Whbbit</a>
                 </span>
             </div>
             <div class="reprint__type">
@@ -541,7 +547,7 @@ body </span><span class="token punctuation">{</span>
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://whbbit.cn/2020/02/10/202010232031-md/">http://whbbit.cn/2020/02/10/202010232031-md/</a>
+                    <a href="http://whbbit.cn/2020/10/24/page-202010241706/">http://whbbit.cn/2020/10/24/page-202010241706/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -554,7 +560,7 @@ body </span><span class="token punctuation">{</span>
                     本博客所有文章除特別声明外，均采用
                     <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
                     许可协议。转载请注明来源
-                    <a href="http://whbbit.cn" target="_blank">朽月</a>
+                    <a href="http://whbbit.cn" target="_blank">Whbbit</a>
                     !
                 </span>
             </div>
@@ -581,6 +587,10 @@ body </span><span class="token punctuation">{</span>
                             
                                 <a href="/tags/%E7%AC%94%E8%AE%B0/">
                                     <span class="chip bg-color">笔记</span>
+                                </a>
+                            
+                                <a href="/tags/JS/">
+                                    <span class="chip bg-color">JS</span>
                                 </a>
                             
                         </div>
@@ -746,49 +756,65 @@ body </span><span class="token punctuation">{</span>
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/02/10/page-2020-02-10-02/">
+                <a href="/2020/10/24/page-202010241706/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="使用阿里云OSS搭建自己的图床">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="函数递归及匿名函数">
                         
-                        <span class="card-title">使用阿里云OSS搭建自己的图床</span>
+                        <span class="card-title">函数递归及匿名函数</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-在写markdown文档的时候，经常会想要插入一些图片来让文章变的尽可能的图文并茂，但是如果是托管到GitHub上的话，图片又不是太好处理，所以就有了今天的这篇文章。
+                            函数的递归以及匿名函数的使用
 
-搭建自己的图床的好处再网上你可以搜索到许许多多的图床供你来使用，但是
+
+递归匿名函数使用
+将一个我匿名函数赋值给一个变量
+
+var fn = function () {
+  alert("hehe")
+}
+fn()
+
+将匿名函数绑定给事件所触发的对象
+
+document.onc
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-02-10
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-10-24
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/" class="post-category">
-                                    云服务器
+                            <a href="/categories/%E7%AC%94%E8%AE%B0/" class="post-category">
+                                    笔记
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%B0%8F%E6%8A%80%E5%B7%A7/">
-                        <span class="chip bg-color">小技巧</span>
+                    <a href="/tags/%E7%AC%94%E8%AE%B0/">
+                        <span class="chip bg-color">笔记</span>
+                    </a>
+                    
+                    <a href="/tags/JS/">
+                        <span class="chip bg-color">JS</span>
                     </a>
                     
                 </div>
@@ -802,34 +828,36 @@ body </span><span class="token punctuation">{</span>
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/02/10/page-20-02-10-01/">
+                <a href="/2020/10/23/page-20201024/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="代码截图插件">
+                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="作用域及作用域链">
                         
-                        <span class="card-title">代码截图插件</span>
+                        <span class="card-title">作用域及作用域链</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-你有没有在查资料时见到一些非常漂亮的代码块截图？你是否需要在自己的博客中添加一些代码块的截图？这个插件可能能够帮助到你。
+                            作用域以及作用域链的作用原理
 
-前言现在我们使用的编辑器大体上都转换成了微软的vscode这个轻量级的编辑器，这里有着数不清的插件，今天推荐的是一
+
+作用域作用域： 作用的范围
+作用域链当前做作用域中没有要找的东西，则向父级作用域查找，如果还没有，则依次向父级的父级查找，这个过程称为作用域链
+全局变量和局部变量全局变量声明在 script 作用域中的变量
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-10
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-10-23
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E6%8F%92%E4%BB%B6/" class="post-category">
-                                    插件
+                            <a href="/categories/%E7%AC%94%E8%AE%B0/" class="post-category">
+                                    笔记
                                 </a>
                             
                             
@@ -839,8 +867,12 @@ body </span><span class="token punctuation">{</span>
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E4%BC%98%E7%A7%80%E8%B5%84%E6%BA%90/">
-                        <span class="chip bg-color">优秀资源</span>
+                    <a href="/tags/%E7%AC%94%E8%AE%B0/">
+                        <span class="chip bg-color">笔记</span>
+                    </a>
+                    
+                    <a href="/tags/Js/">
+                        <span class="chip bg-color">Js</span>
                     </a>
                     
                 </div>
