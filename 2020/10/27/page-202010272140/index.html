@@ -4,18 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="函数递归及匿名函数, 朽月">
-    <meta name="description" content="函数的递归以及匿名函数的使用
-
-
-递归自己调用自己，和循环类似。为了避免无限的递归，需要一个退出条件
-匿名函数使用
-将一个我匿名函数赋值给一个变量
-
-var fn = function () {
-  alert(&#34;hehe&#34;)
-}
-fn()">
+    <meta name="keywords" content="数组新方法, 朽月">
+    <meta name="description" content="一、 严格模式“use strict”注：必须放在作用域的开头部分！！！！！ 1. 必须显式声明变量 2. 函数中的形参不允许重复 3. 修订了函数中的实参副本（arguments）,不受形参的改变而 影响 4. 不允许使用 argumen">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -23,7 +13,7 @@ fn()">
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>函数递归及匿名函数 | 朽月</title>
+    <title>数组新方法 | 朽月</title>
     <link rel="icon" type="image/png" href="/505735.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -296,7 +286,7 @@ fn()">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">函数递归及匿名函数</h1>
+                    <h1 class="description center-align post-title">数组新方法</h1>
                 </div>
             </div>
         </div>
@@ -411,29 +401,12 @@ fn()">
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                    <div class="article-tag">
-                        
-                            <a href="/tags/%E7%AC%94%E8%AE%B0/">
-                                <span class="chip bg-color">笔记</span>
-                            </a>
-                        
-                            <a href="/tags/JS/">
-                                <span class="chip bg-color">JS</span>
-                            </a>
-                        
-                    </div>
+                          <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                          </div>
                     
                 </div>
                 <div class="col s5 right-align">
-                    
-                    <div class="post-cate">
-                        <i class="fas fa-bookmark fa-fw icon-category"></i>
-                        
-                            <a href="/categories/%E7%AC%94%E8%AE%B0/" class="post-category">
-                                笔记
-                            </a>
-                        
-                    </div>
                     
                 </div>
             </div>
@@ -442,21 +415,21 @@ fn()">
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-10-24
+                    2020-10-27
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-10-26
+                    2020-10-27
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    204
+                    425
                 </div>
                 
 
@@ -479,47 +452,30 @@ fn()">
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>函数的递归以及匿名函数的使用</p>
-<a id="more"></a>
-
-<h2 id="递归"><a href="#递归" class="headerlink" title="递归"></a>递归</h2><p>自己调用自己，和循环类似。为了避免无限的递归，需要一个退出条件</p>
-<h2 id="匿名函数"><a href="#匿名函数" class="headerlink" title="匿名函数"></a>匿名函数</h2><h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><ol>
-<li>将一个我匿名函数赋值给一个变量</li>
+                <p>一、 严格模式<br>“use strict”<br>注：必须放在作用域的开头部分！！！！！ 1. 必须显式声明变量 2. 函数中的形参不允许重复 3. 修订了函数中的实参副本（arguments）,不受形参的改变而 影响 4. 不允许使用 arguments.callee(相当于调用自己的函数名) 5. 不允许使用 with(){}来解析对象的属性 6. 新增关键字 eval、arguments 7. 不允许使用八进制</p>
+<p>二、新增数组方法（都不影响原数组）</p>
+<ol>
+<li><p>indexOf(元素,从哪个下标开始向右查找) : 查找元素在数组中第一次出现的下标位置，如果没有找到，返回-1</p>
+</li>
+<li><p>lastIndexOf(元素,从哪个下标开始向左找) ： 查找元素在数组中从右向左第一次出现的下标位置。</p>
+</li>
+<li><p>forEach(function(value,index,array){}) 遍历数组</p>
+<pre><code>var arr = [1,2,3,4,5];
+arr.forEach(function(value,index,array){
+    console.log(&#39;元素：&#39; + value,&#39;下标:&#39; + index,&#39;数组:&#39; + array);
+})</code></pre></li>
+<li><p>map(function(value,index,array){<br>return …<br>}) 遍历数组，返回操作后的数组</p>
+</li>
+<li><p>every(function(value,index,array){<br>return 条件<br>}) //遍历出来的每一个元素都符合条件，则返回 true,只要有一个不符合条件，则退出循环，返回 false</p>
+</li>
+<li><p>some(function(value,index,array){<br>return 条件<br>}) //遍历出来的每一个元素只要有一个符合条件，则返回 true 且退出循环。如果所有元素都不符合条件，返回 false</p>
+</li>
+<li><p>filter(function(value,index,array){<br>return 条件<br>}) //过滤数组元素，返回数组</p>
+</li>
+<li><p>reduce(function(prev,next,index,array){<br>return 值;<br>}) //归并</p>
+<p>[1,2,4,43,23,2,2,4,3,2,] [1,2,4,43,23,3] 数组去重<br>[1,[2,3,[4,5,[6],7]]] [1,2,3,4,5,6,7] 扁平化数组</p>
+</li>
 </ol>
-<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">var</span> fn <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-  <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">"hehe"</span><span class="token punctuation">)</span>
-<span class="token punctuation">}</span>
-<span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre>
-<ol start="2">
-<li>将匿名函数绑定给事件所触发的对象</li>
-</ol>
-<pre class=" language-javascript"><code class="language-javascript">document<span class="token punctuation">.</span>onclick <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-  <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">"hehe"</span><span class="token punctuation">)</span>
-<span class="token punctuation">}</span></code></pre>
-<ol start="3">
-<li>匿名函数自我执行</li>
-</ol>
-<pre class=" language-javascript"><code class="language-javascript"><span class="token punctuation">;</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-  <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">"函数的自我执行"</span><span class="token punctuation">)</span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre>
-<blockquote>
-<p>有多个的匿名函数的自我调用的话，在每次自我调用完，加上分号。也可以在自我调用前使用分号与前面进行分隔。</p>
-</blockquote>
-<ol start="4">
-<li>匿名函数的返回值赋值给一个变量</li>
-</ol>
-<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">var</span> sum <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span>a<span class="token punctuation">,</span> b<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-  <span class="token keyword">return</span> a <span class="token operator">+</span> b
-<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">)</span>
-<span class="token function">alert</span><span class="token punctuation">(</span>sum<span class="token punctuation">)</span></code></pre>
-<ol start="5">
-<li>将匿名函数的返回值输出来</li>
-</ol>
-<pre class=" language-javascript"><code class="language-javascript"><span class="token function">alert</span><span class="token punctuation">(</span>
-  <span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span>a<span class="token punctuation">,</span> b<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">return</span> a <span class="token operator">*</span> b
-  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">)</span>
-<span class="token punctuation">)</span></code></pre>
 
             </div>
             <hr/>
@@ -545,7 +501,7 @@ fn()">
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://whbbit.cn/2020/10/24/page-202010241706/">http://whbbit.cn/2020/10/24/page-202010241706/</a>
+                    <a href="http://whbbit.cn/2020/10/27/page-202010272140/">http://whbbit.cn/2020/10/27/page-202010272140/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -582,15 +538,7 @@ fn()">
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            
-                                <a href="/tags/%E7%AC%94%E8%AE%B0/">
-                                    <span class="chip bg-color">笔记</span>
-                                </a>
-                            
-                                <a href="/tags/JS/">
-                                    <span class="chip bg-color">JS</span>
-                                </a>
-                            
+                            <span class="chip bg-color">无标签</span>
                         </div>
                     
                 </div>
@@ -754,9 +702,48 @@ fn()">
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2020/10/27/page-202010272140/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="数组新方法">
+                        
+                        <span class="card-title">数组新方法</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            一、 严格模式“use strict”注：必须放在作用域的开头部分！！！！！ 1. 必须显式声明变量 2. 函数中的形参不允许重复 3. 修订了函数中的实参副本（arguments）,不受形参的改变而 影响 4. 不允许使用 argumen
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-10-27
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            Whbbit
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
             <div class="card">
                 <a href="/2020/10/27/page-202010272137/">
                     <div class="card-image">
@@ -788,9 +775,9 @@ fn()">
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-10-27
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-10-27
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -812,64 +799,6 @@ fn()">
                     
                     <a href="/tags/JS/">
                         <span class="chip bg-color">JS</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2020/10/23/page-20201024/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="作用域及作用域链">
-                        
-                        <span class="card-title">作用域及作用域链</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            作用域以及作用域链的作用原理
-
-
-作用域作用域： 作用的范围
-作用域链当前做作用域中没有要找的东西，则向父级作用域查找，如果还没有，则依次向父级的父级查找，这个过程称为作用域链
-全局变量和局部变量全局变量声明在 script 作用域中的变量
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-10-23
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E7%AC%94%E8%AE%B0/" class="post-category">
-                                    笔记
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/%E7%AC%94%E8%AE%B0/">
-                        <span class="chip bg-color">笔记</span>
-                    </a>
-                    
-                    <a href="/tags/Js/">
-                        <span class="chip bg-color">Js</span>
                     </a>
                     
                 </div>
